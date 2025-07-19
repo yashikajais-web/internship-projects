@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER USING FRONTEND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <audio src="1 song.mp3" id= "audio"></audio>
+      <audio src="2 song.mp3" id="audio"></audio>
+    <div class="music-player">
+        <h1 class="music-name">Ishq Mein</h1>
+        <p class="artist-name">Sachin-Jigar</p>
+
+        <div class="disk"></div>
+
+        <div class="song-slider">
+            <input type= "range" value="0" class="seek-Bar" min="0" max="100" step="1">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn backward-btn"><img src="pre.png" alter=""></button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+        <button class="btn forward-btn"><img src="nxt.png" alt=""></button>
+    </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="data.js"></script>
+</body>
+
+</html>
